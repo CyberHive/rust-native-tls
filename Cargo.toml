@@ -28,9 +28,12 @@ schannel = "0.1.17"
 
 [target.'cfg(not(any(target_os = "windows", target_os = "macos", target_os = "ios")))'.dependencies]
 log = "0.4.5"
-openssl = "0.10.29"
-openssl-sys = "0.9.55"
+# openssl = "0.10.29"
+openssl = { git = "https://github.com/CyberHive/rust-openssl.git"}
+# openssl-sys = "0.9.55"
+openssl-sys = { git = "https://github.com/CyberHive/rust-openssl.git"}
 openssl-probe = "0.1"
+
 
 [dev-dependencies]
 tempfile = "3.0"
